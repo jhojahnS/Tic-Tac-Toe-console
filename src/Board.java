@@ -33,4 +33,21 @@ public class Board {
         board[row][col] = mark;
         return true;
     }
+
+    public boolean Winner(char mark){
+        for (int i=0; i<3; i++){
+            if (board[i][0] == mark && board[i][1]==mark && board[i][2]==mark)
+                return true;
+        }
+        for (int j=0; j<3; j++){
+            if (board[0][j] == mark && board[1][j]==mark && board[2][j]==mark)
+                return true;
+        }
+        if (board[0][0] == mark && board[1][1]==mark && board[2][2]==mark)
+            return true;
+        if (board[0][2] == mark && board[1][1]==mark && board[2][0]==mark)
+            return true;
+
+        return false;
+    }
 }
