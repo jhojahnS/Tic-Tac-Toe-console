@@ -12,7 +12,22 @@ Este proyecto implementa un juego de Tres en raya en consola desarrollado en jav
 - Java
 - GitHub
 
-### Requisitos previos
+## Requisitos previos
 - java 18 o superior
 
-##
+## Como ejecutar el proyecto 
+1. Clonar el repositorio (git clone https://github.com/jhojahnS/Tic-Tac-Toe-console.git)
+2. acceder a la carpeta del proyecto (cd tic-tac-toe-console)
+3. Copilar el proyecto
+4. Ejecuta el juego
+
+# Flujo de trabajo 
+Durante el desarrollo del proyecto se sigue el modelo GitHub Flow
+Pasos utilizados:
+1. crear una nueva rama a partir de main (rama de ejemplo: feature/"funcionalidad")
+2. Desarrollar la funcionalidad
+3. Realizar commits siguiendo Convencional Commits
+4. Subir la rama al repositorio remoto
+5. Crear un Pull Request
+6. Se revisa y se hace merge a main
+
