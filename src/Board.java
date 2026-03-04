@@ -23,4 +23,14 @@ public class Board {
             }
         }
     }
+
+    public boolean placeMark(int row, int col, char mark){
+        if(row< 0 || row >2 || col < 0 || col > 2)
+            return false;
+        if (board[row][col]!=' ')
+            return false;
+
+        board[row][col] = mark;
+        return true;
+    }
 }
