@@ -24,7 +24,13 @@ public class Game {
 
             if(board.Winner(turn)){
                 board.printBoard();
-                System.out.println("¡Gana la "+ turn +"!");
+                System.out.println("Gana la "+ turn);
+                break;
+            }
+
+            if (board.isFull()){
+                board.printBoard();
+                System.out.println("Empate");
                 break;
             }
 
