@@ -22,10 +22,17 @@ public class Game {
 
             boolean ok = board.placeMark(row, col, turn);
 
+            if(board.Winner(turn)){
+                board.printBoard();
+                System.out.println("¡Gana la "+ turn +"!");
+                break;
+            }
+
             if (!ok) {
                 System.out.println("Posicion invalida intentalo otra vez");
                 continue;
             }
+
 
             if(turn =='X'){
                 turn='O';
