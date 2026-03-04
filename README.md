@@ -1,4 +1,4 @@
-# Tic Tac Toe . version consola
+# Tic Tac Toe - version de consola
 Este proyecto implementa un juego de Tres en raya en consola desarrollado en java. Dos jugadores se turnan para colocar sus simbolos (X y O) en un tablero 3x3 hasta uno gana o termine en empate.
 
 ## Caracteristicas
@@ -13,13 +13,13 @@ Este proyecto implementa un juego de Tres en raya en consola desarrollado en jav
 - GitHub
 
 ## Requisitos previos
-- java 18 o superior
+- java 21 o superior
 
 ## Como ejecutar el proyecto 
 1. Clonar el repositorio (git clone https://github.com/jhojahnS/Tic-Tac-Toe-console.git)
 2. acceder a la carpeta del proyecto (cd tic-tac-toe-console)
-3. Copilar el proyecto
-4. Ejecuta el juego
+3. Copilar el proyecto (javac src/*.java)
+4. Ejecuta el juego (java src.Game)
 
 # Flujo de trabajo 
 Durante el desarrollo del proyecto se sigue el modelo GitHub Flow
