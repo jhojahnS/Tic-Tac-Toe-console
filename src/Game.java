@@ -7,9 +7,11 @@ public class Game {
         Board board= new Board();
         Scanner sc =new Scanner(System.in);
 
+        char turn= 'X';
         while(true) {
             board.printBoard();
 
+            System.out.println("Turno de: "+turn);
             System.out.print("Fila (1-3):");
 
             int row = sc.nextInt() - 1;
@@ -18,10 +20,17 @@ public class Game {
 
             int col = sc.nextInt() - 1;
 
-            boolean ok = board.placeMark(row, col, 'X');
+            boolean ok = board.placeMark(row, col, turn);
 
             if (!ok) {
                 System.out.println("Posicion invalida intentalo otra vez");
+                continue;
+            }
+
+            if(turn =='X'){
+                turn='O';
+            }else {
+                turn='X';
             }
 
         }
