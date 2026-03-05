@@ -12,13 +12,11 @@ public class Game {
             board.printBoard();
 
             System.out.println("Turno de: "+turn);
-            System.out.print("Fila (1-3):");
 
-            int row = sc.nextInt() - 1;
+            int row = Validation(sc,"Fila (1-3):" );
 
-            System.out.println("Columna (1-3):");
 
-            int col = sc.nextInt() - 1;
+            int col = Validation(sc,"Columna (1-3):" )-1;
 
             boolean ok = board.placeMark(row, col, turn);
 
@@ -46,6 +44,17 @@ public class Game {
                 turn='X';
             }
 
+        }
+    }
+
+    private static int Validation(Scanner sc, String mensaje){
+        while(true){
+            System.out.println(mensaje);
+            if(sc.hasNextInt()){
+                return sc.nextInt();
+            }
+            sc.next();
+            System.out.println("Dato no valido, intentelo otra vez");
         }
     }
 }
